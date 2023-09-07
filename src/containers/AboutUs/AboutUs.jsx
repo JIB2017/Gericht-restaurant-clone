@@ -6,7 +6,7 @@ import "./AboutUs.scss";
 
 function AboutUs() {
   return (
-    <div className="app__about">
+    <div className="app__about" id="about">
       <div className="app__about-overlay">
         <img src={letter} alt="letter" />
       </div>

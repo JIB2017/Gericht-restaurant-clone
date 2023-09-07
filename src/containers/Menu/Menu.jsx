@@ -7,7 +7,7 @@ import "./Menu.scss";
 
 function Menu() {
   return (
-    <div className="app__menu">
+    <div className="app__menu" id="menu">
       <div className="app__menu-title">
         <h4>Menu That Fits Your Palette</h4>
         <img src={spoon} alt="spoon" />

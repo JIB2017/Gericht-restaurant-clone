@@ -14,4 +14,11 @@ const cocktails = [
   { title: "Negroni", price: "$26", tag: "Gin | Sweet Vermouth | Campari | Orange garnish" },
 ];
 
-export default { wines, cocktails };
+const awards = [
+  { image: "../../assets/award02.png", title: "Bib Gourmond", description: "Lorem ipsum dolor sit amet, consectetur." },
+  { image: "../../assets/award01.png", title: "Rising Star", description: "Lorem ipsum dolor sit amet, consectetur." },
+  { image: "../../assets/award05.png", title: "AA Hospitality ", description: "Lorem ipsum dolor sit amet, consectetur." },
+  { image: "../../assets/award03.png", title: "Outstanding Chef", description: "Lorem ipsum dolor sit amet, consectetur." },
+];
+
+export default { wines, cocktails, awards };

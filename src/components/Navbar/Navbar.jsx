@@ -18,16 +18,16 @@ function Navbar() {
           <a href="#home">Home</a>
         </li>
         <li>
-          <a href="#pages">Pages</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#contact">Contact Us</a>
+          <a href="#menu">Menu</a>
         </li>
         <li>
-          <a href="#blog">Blog</a>
+          <a href="#awards">Awards</a>
         </li>
         <li>
-          <a href="#landing">Landing</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
       <div className="app__navbar-login">

@@ -5,7 +5,7 @@ import "./Header.scss";
 
 function Header() {
   return (
-    <div className='app__header'>
+    <div className='app__header' id='home'>
       <div className='app__header-content'>
         <p>Chase The New Flavour</p>
         <img src={spoon} alt="Spoon" />
