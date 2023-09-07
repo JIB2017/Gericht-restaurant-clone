@@ -50,26 +50,31 @@
 
     .app__chef-content_quote {
       display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
+      justify-content: flex-start;
+      align-items: flex-end;
 
       img {
         width: 47px;
+        margin: 0 0.5rem 0.5rem 0;
       }
 
       p {
         font-size: 16px;
         font-family: var(--font-alt);
+        font-style: italic;
         font-weight: 400;
         color: var(--color-grey);
+        letter-spacing: 0.04em;
       }
     }
 
     .quote {
       font-size: 16px;
       font-family: var(--font-alt);
+      font-style: italic;
       font-weight: 400;
       color: var(--color-grey);
+      letter-spacing: 0.04em;
       margin-bottom: 4rem;
     }
 
@@ -86,6 +91,7 @@
         font-family: var(--font-alt);
         font-weight: 400;
         color: var(--color-grey);
+        letter-spacing: 0.04em;
         margin-bottom: 4rem;
       }
 
