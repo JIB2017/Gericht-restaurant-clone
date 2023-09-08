@@ -27,9 +27,9 @@ function Intro() {
       <div className="app__intro-overlay">
         <div className="app__intro-overlay_circle" onClick={handleVideo}>
           {playVideo ? (
-            <BsFillPlayFill color="#fff" fontSize={40} />
-          ) : (
             <BsPauseFill color="#fff" fontSize={40} />
+          ) : (
+            <BsFillPlayFill color="#fff" fontSize={40} />
           )}
         </div>
       </div>
