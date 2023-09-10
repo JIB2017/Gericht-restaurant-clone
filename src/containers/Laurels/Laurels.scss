@@ -1,49 +1,89 @@
 .app__laurels {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 120vh;
+  padding: 8rem 6rem;
+  justify-content: space-evenly;
+  background-image: url("../../assets/bg.png");
+
+  .app__laurels-content {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 120vh;
-    padding: 8rem 6rem;
-    justify-content: space-evenly;
-    background-image: url("../../assets/bg.png");
+    flex-direction: column;
 
-    .app__laurels-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        h4 {
-            font-size: 23px;
-            font-weight: 800;
-            font-family: var(--font-base);
-            color: var(--color-white);
-            letter-spacing: 1px;
-            margin-bottom: 0.5rem;
-          }
-      
-          img {
-            width: 40px;
-          }
-      
-          h1 {
-            font-size: 64px;
-            font-weight: 500;
-            font-family: var(--font-base);
-            margin-top: 0.8rem;
-            color: var(--color-golden);
-            letter-spacing: 2px;
-            margin-bottom: 4rem;
-          }
-
-          .app__laurels-content-awards {}
+    h4 {
+      font-size: 23px;
+      font-weight: 800;
+      font-family: var(--font-base);
+      color: var(--color-white);
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
     }
 
-    .app__laurels-image {
+    img {
+      width: 40px;
+    }
+
+    h1 {
+      font-size: 64px;
+      font-weight: 500;
+      font-family: var(--font-base);
+      margin-top: 0.8rem;
+      color: var(--color-golden);
+      letter-spacing: 2px;
+      margin-bottom: 4rem;
+    }
+
+    .app__laurels-content_awards {
+      display: grid;
+      grid-template-columns: auto auto;
+
+      .app__laurels-content_award {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 2rem 2rem 0;
+        width: 401px;
 
         img {
-            width: 575px;
-            height: 692px;
+          width: 140px;
+          margin-right: 2rem;
         }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          h4 {
+            font-size: 23px;
+            font-weight: 700;
+            font-family: var(--font-base);
+            color: var(--color-golden);
+            letter-spacing: 1px;
+          }
+
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: var(--font-alt);
+            color: var(--color-grey);
+            letter-spacing: 2px;
+            text-align: left;
+            margin-bottom: 2rem;
+          }
+        }
+      }
     }
+  }
+
+  .app__laurels-image {
+    display: flex;
+
+    img {
+      width: 575px;
+      height: 692px;
+    }
+  }
 }

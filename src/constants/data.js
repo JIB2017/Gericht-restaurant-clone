@@ -15,10 +15,12 @@ const cocktails = [
 ];
 
 const awards = [
-  { image: "../../assets/award02.png", title: "Bib Gourmond", description: "Lorem ipsum dolor sit amet, consectetur." },
-  { image: "../../assets/award01.png", title: "Rising Star", description: "Lorem ipsum dolor sit amet, consectetur." },
-  { image: "../../assets/award05.png", title: "AA Hospitality ", description: "Lorem ipsum dolor sit amet, consectetur." },
-  { image: "../../assets/award03.png", title: "Outstanding Chef", description: "Lorem ipsum dolor sit amet, consectetur." },
+  { image: require("../assets/award02.png"), title: "Bib Gourmond", description: "Lorem ipsum dolor sit amet, consectetur." },
+  { image: require("../assets/award01.png"), title: "Rising Star", description: "Lorem ipsum dolor sit amet, consectetur." },
+  { image: require("../assets/award05.png"), title: "AA Hospitality ", description: "Lorem ipsum dolor sit amet, consectetur." },
+  { image: require("../assets/award03.png"), title: "Outstanding Chef", description: "Lorem ipsum dolor sit amet, consectetur." },
 ];
 
-export default { wines, cocktails, awards };
+const data = { wines, cocktails, awards };
+
+export default data;
