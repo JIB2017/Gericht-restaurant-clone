@@ -1,0 +1,74 @@
+.app__findus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../../assets/bg.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 8rem 6rem;
+
+  .app__findus-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h4 {
+      font-size: 23px;
+      font-weight: 800;
+      font-family: var(--font-base);
+      color: var(--color-white);
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      width: 40px;
+    }
+
+    h1 {
+      font-size: 64px;
+      font-weight: 500;
+      font-family: var(--font-base);
+      margin-top: 0.8rem;
+      color: var(--color-golden);
+      letter-spacing: 2px;
+      margin-bottom: 4rem;
+    }
+    
+    p:first-child {
+      color: var(--color-grey);
+    }
+    
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: var(--font-alt);
+      color: var(--color-white);
+      letter-spacing: 2px;
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+
+    h5 {
+      font-size: 23px;
+      font-weight: 800;
+      font-family: var(--font-base);
+      color: var(--color-golden);
+      letter-spacing: 1px;
+      margin-bottom: 1.5rem;
+    }
+
+  }
+
+  .app__findus-image {
+    display: flex;
+
+    img {
+        width: 629px;
+        height: 736px;
+    }
+  }
+}
