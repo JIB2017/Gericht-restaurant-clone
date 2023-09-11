@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import NewsLetter from '../../components/Newsletter/Newsletter';
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className='app__footer'>
+      <NewsLetter />
+    </div>
   )
 }
 
-export default Footer
+export default Footer;
