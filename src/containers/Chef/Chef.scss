@@ -6,6 +6,10 @@
   padding: 8rem 6rem;
   justify-content: space-around;
   background-image: url("../../assets/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
 
   .app__chef-image {
     display: flex;

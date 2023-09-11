@@ -1,131 +1,130 @@
 .app__about {
-    position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 3rem;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+  .app__about-overlay {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100vh;
-    padding: 2rem 3rem;
-    align-items: center;
+    position: absolute;
     justify-content: center;
-    background-image: url("../../assets/bg.png");
+    align-items: center;
+    inset: 0;
 
+    img {
+      width: 391px;
+      z-index: 0;
+    }
+  }
 
-    .app__about-overlay {
-        display: flex;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        inset: 0;
+  .app__about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 6rem;
+    width: 30%;
+    z-index: 1;
 
-
-        img {
-            width: 391px;
-            z-index: 0;
-        }
+    h2 {
+      font-size: 64px;
+      font-weight: 600;
+      font-family: var(--font-base);
+      color: var(--color-golden);
     }
 
-
-    .app__about-us {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-right: 6rem;
-        width: 30%;
-        z-index: 1;
-
-        h2 {
-            font-size: 64px;
-            font-weight: 600;
-            font-family: var(--font-base);
-            color: var(--color-golden);
-        }
-
-        img {
-            width: 40px;
-            height: 9px;
-            margin-bottom: 1rem;
-            transform: rotate(180deg);
-        }
-
-        p {
-            font-size: 16px;
-            font-weight: 400;
-            font-family: var(--font-alt);
-            color: var(--color-grey);
-            margin-bottom: 2.5rem;
-            line-height: 28px;
-            text-align: right;
-        }
-
-        button {
-            padding: 0.8rem 0.8rem;
-            background-color: var(--color-golden);
-            font-family: var(--font-base);
-            font-size: 16px;
-            font-weight: 800;
-            min-width: 157px;
-            justify-content: center;
-            align-items: center;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
+    img {
+      width: 40px;
+      height: 9px;
+      margin-bottom: 1rem;
+      transform: rotate(180deg);
     }
 
-
-    .app__about-images {
-        z-index: 1;
-
-        .knife {
-            width: 84px;
-            height: 701px;
-        }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: var(--font-alt);
+      color: var(--color-grey);
+      margin-bottom: 2.5rem;
+      line-height: 28px;
+      text-align: right;
     }
 
-
-    .app__about-history {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 6rem;
-        width: 30%;
-        z-index: 1;
-
-        h2 {
-            font-size: 64px;
-            font-weight: 600;
-            font-family: var(--font-base);
-            color: var(--color-golden);
-        }
-
-        img {
-            width: 40px;
-            height: 9px;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            font-size: 16px;
-            font-weight: 400;
-            font-family: var(--font-alt);
-            color: var(--color-grey);
-            margin-bottom: 2.5rem;
-            line-height: 28px;
-            text-align: left;
-        }
-
-        button {
-            padding: 0.8rem 0.8rem;
-            background-color: var(--color-golden);
-            font-family: var(--font-base);
-            font-size: 16px;
-            font-weight: 800;
-            min-width: 157px;
-            justify-content: center;
-            align-items: center;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
+    button {
+      padding: 0.8rem 0.8rem;
+      background-color: var(--color-golden);
+      font-family: var(--font-base);
+      font-size: 16px;
+      font-weight: 800;
+      min-width: 157px;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      cursor: pointer;
     }
+  }
+
+  .app__about-images {
+    z-index: 1;
+
+    .knife {
+      width: 84px;
+      height: 701px;
+    }
+  }
+
+  .app__about-history {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 6rem;
+    width: 30%;
+    z-index: 1;
+
+    h2 {
+      font-size: 64px;
+      font-weight: 600;
+      font-family: var(--font-base);
+      color: var(--color-golden);
+    }
+
+    img {
+      width: 40px;
+      height: 9px;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: var(--font-alt);
+      color: var(--color-grey);
+      margin-bottom: 2.5rem;
+      line-height: 28px;
+      text-align: left;
+    }
+
+    button {
+      padding: 0.8rem 0.8rem;
+      background-color: var(--color-golden);
+      font-family: var(--font-base);
+      font-size: 16px;
+      font-weight: 800;
+      min-width: 157px;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
 }
