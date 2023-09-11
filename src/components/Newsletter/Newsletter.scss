@@ -1,8 +1,12 @@
 .app__newsLetter {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: var(--color-black);
   width: 67.7%;
+  border: 2px solid rgb(220, 202, 135, 0.35);
+  padding: 3rem 4rem;
 
   h4 {
     font-size: 23px;
@@ -37,5 +41,35 @@
     margin-bottom: 1.5rem;
   }
 
-  
+  .app__newsLetter-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    input {
+      border: 1px solid var(--color-white);
+      margin-right: 2rem;
+      background: transparent;
+      color: var(--color-white);
+      font-size: 16px;
+      font-weight: 600;
+      font-family: var(--font-base);
+      border-color: var(--color-crimson);
+      padding: 1rem 24rem 1rem 0.8rem;
+    }
+
+    button {
+      padding: 0.8rem 0.8rem;
+      background-color: var(--color-golden);
+      font-family: var(--font-base);
+      font-size: 16px;
+      font-weight: 800;
+      min-width: 157px;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
 }

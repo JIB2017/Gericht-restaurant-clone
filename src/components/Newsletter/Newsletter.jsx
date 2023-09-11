@@ -5,12 +5,14 @@ import "./Newsletter.scss";
 function NewsLetter() {
   return (
     <div className="app__newsLetter">
-      <h4>Contact</h4>
+      <h4>Newsletter</h4>
       <img src={spoon} alt="spoon" />
-      <h1>Find Us</h1>
+      <h1>Subscribe to Our Newsletter</h1>
       <p>And never miss latest Updates!</p>
-      <input type="text" placeholder="Email Adress"/>
-      <button type="button">Suscribe</button>
+      <div className="app__newsLetter-form">
+        <input type="text" placeholder="Email Adress" />
+        <button type="button">Suscribe</button>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import NewsLetter from '../../components/Newsletter/Newsletter';
+import "./Footer.scss";
 
 function Footer() {
   return (

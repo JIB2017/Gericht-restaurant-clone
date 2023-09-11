@@ -14,6 +14,7 @@ function FindUs() {
         <h5>Opening Hours</h5>
         <p>Mon - Fri: 10:00 am - 02:00 am</p>
         <p>Sat - Sun: 10:00 am - 03:00 am</p>
+        <button>Visit Us</button>
       </div>
       <div className='app__findus-image'>
         <img src={findUs} alt="spoon" />
