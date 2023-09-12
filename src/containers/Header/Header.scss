@@ -2,15 +2,16 @@
   display: flex;
   flex-direction: row;
   background-color: var(--color-black);
-  width: 100%;
   justify-content: space-between;
   padding: 4rem 12rem;
 
   .app__header-content {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: flex-start;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
     margin-top: 6rem;
 
     p:first-child {
@@ -30,7 +31,6 @@
       font-family: var(--font-base);
       color: var(--color-golden);
       margin-bottom: 2rem;
-      width: 70%;
     }
 
     p {
@@ -39,29 +39,16 @@
       margin-bottom: 1rem;
       color: var(--color-grey);
       justify-content: flex-start;
-      width: 65%;
       line-height: 27px;
-    }
-
-    button {
-      padding: 0.8rem 0.8rem;
-      background-color: var(--color-golden);
-      font-family: var(--font-base);
-      font-size: 16px;
-      font-weight: 800;
-      max-width: 157px;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      outline: none;
-      cursor: pointer;
     }
   }
 
   .app__header-image {
-    display: flex;
     flex: 1;
+    display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
     margin-left: 2rem;
 
     img {

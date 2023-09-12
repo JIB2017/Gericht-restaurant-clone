@@ -1,0 +1,21 @@
+.btn {
+  padding: 0.8rem 0.8rem;
+  background-color: var(--color-golden);
+  font-family: var(--font-alt);
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 157px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  letter-spacing: 0.08em;
+
+  &:hover {
+    background-color: var(--color-black);
+    color: var(--color-golden);
+    border: 1px solid var(--color-golden);
+  }
+}

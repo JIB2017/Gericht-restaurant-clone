@@ -13,7 +13,8 @@
   .app__findus-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
 
     h4 {
       font-size: 23px;
@@ -37,11 +38,11 @@
       letter-spacing: 2px;
       margin-bottom: 4rem;
     }
-    
+
     p:first-child {
       color: var(--color-grey);
     }
-    
+
     p {
       font-size: 16px;
       font-weight: 400;
@@ -60,29 +61,14 @@
       letter-spacing: 1px;
       margin-bottom: 1.5rem;
     }
-
-    button {
-      padding: 0.8rem 0.8rem;
-      background-color: var(--color-golden);
-      font-family: var(--font-base);
-      font-size: 16px;
-      font-weight: 800;
-      max-width: 157px;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      outline: none;
-      cursor: pointer;
-    }
-
   }
 
   .app__findus-image {
     display: flex;
 
     img {
-        width: 629px;
-        height: 736px;
+      width: 629px;
+      height: 736px;
     }
   }
 }

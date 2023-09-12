@@ -29,7 +29,7 @@
 
     h1 {
       font-size: 64px;
-      font-weight: 500;
+      font-weight: 600;
       font-family: var(--font-base);
       margin-top: 0.8rem;
       color: var(--color-golden);
@@ -95,20 +95,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    button {
-      padding: 0.8rem 0.8rem;
-      background-color: var(--color-golden);
-      font-family: var(--font-base);
-      font-size: 16px;
-      font-weight: 800;
-      min-width: 137px;
-      max-width: 157px;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      outline: none;
-      cursor: pointer;
-    }
   }
 }

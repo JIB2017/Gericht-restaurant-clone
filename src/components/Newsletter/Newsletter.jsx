@@ -10,8 +10,8 @@ function NewsLetter() {
       <h1>Subscribe to Our Newsletter</h1>
       <p>And never miss latest Updates!</p>
       <div className="app__newsLetter-form">
-        <input type="text" placeholder="Email Adress" />
-        <button type="button">Suscribe</button>
+        <input type="email" placeholder="Email Adress" />
+        <button type="button" className="btn">Suscribe</button>
       </div>
     </div>
   );

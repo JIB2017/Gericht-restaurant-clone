@@ -43,7 +43,7 @@ function Menu() {
         </div>
       </div>
       <div className="app__menu-button">
-        <button type="button">View More</button>
+        <button type="button" className="btn">View More</button>
       </div>
     </div>
   );

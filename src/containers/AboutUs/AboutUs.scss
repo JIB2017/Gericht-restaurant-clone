@@ -34,7 +34,7 @@
     width: 30%;
     z-index: 1;
 
-    h2 {
+    h1 {
       font-size: 64px;
       font-weight: 600;
       font-family: var(--font-base);
@@ -57,20 +57,6 @@
       line-height: 28px;
       text-align: right;
     }
-
-    button {
-      padding: 0.8rem 0.8rem;
-      background-color: var(--color-golden);
-      font-family: var(--font-base);
-      font-size: 16px;
-      font-weight: 800;
-      min-width: 157px;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      outline: none;
-      cursor: pointer;
-    }
   }
 
   .app__about-images {
@@ -90,7 +76,7 @@
     width: 30%;
     z-index: 1;
 
-    h2 {
+    h1 {
       font-size: 64px;
       font-weight: 600;
       font-family: var(--font-base);
@@ -111,20 +97,6 @@
       margin-bottom: 2.5rem;
       line-height: 28px;
       text-align: left;
-    }
-
-    button {
-      padding: 0.8rem 0.8rem;
-      background-color: var(--color-golden);
-      font-family: var(--font-base);
-      font-size: 16px;
-      font-weight: 800;
-      min-width: 157px;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      outline: none;
-      cursor: pointer;
     }
   }
 }
