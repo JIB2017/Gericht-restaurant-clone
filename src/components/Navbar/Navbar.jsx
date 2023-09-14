@@ -36,25 +36,33 @@ function Navbar() {
         <a href="#table">Book Table</a>
       </div>
       <div className="app__navbar-mobile">
-        <GiHamburgerMenu size={27} onClick={() => setMobileMenu(true)} />
+        {/* Icons for dropdown menu */}
+        {mobileMenu ? (
+          <MdOutlineRestaurantMenu
+            size={27}
+            onClick={() => setMobileMenu(false)}
+          />
+        ) : (
+          <GiHamburgerMenu size={27} onClick={() => setMobileMenu(true)} />
+        )}
+        {/* Dropdown menu */}
         {mobileMenu && (
           <div className="app__navbar-mobile_container slide-bottom">
-            <MdOutlineRestaurantMenu size={27} onClick={() => setMobileMenu(false)} />
             <ul className="app__navbar-mobile__links">
               <li>
                 <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#pages">Pages</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a href="#contact">Contact Us</a>
+                <a href="#menu">Menu</a>
               </li>
               <li>
-                <a href="#blog">Blog</a>
+                <a href="#awards">Awards</a>
               </li>
               <li>
-                <a href="#landing">Landing</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
             <div className="app__navbar-mobile_login">
