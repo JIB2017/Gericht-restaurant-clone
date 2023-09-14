@@ -1,17 +1,40 @@
-import React from "react";
+import React, { useRef } from "react";
 import spoon from "../../assets/spoon.png";
 import menu from "../../assets/menu.png";
 import MenuItem from "../../components/MenuItem/MenuItem";
 import data from "../../constants/data";
+import { motion, useInView } from "framer-motion";
 import "./Menu.scss";
 
 function Menu() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const variants = {
+    hidden: {
+      transform: "rotateX(-180deg)",
+      opacity: 0,
+      transition: {
+        delay: 0.3,
+      },
+    },
+    visible: {
+      transform: isInView ? "rotateX(0deg)" : "rotateX(-360deg)",
+      opacity: isInView ? 1 : 0,
+      transition: {
+        duration: 0.8,
+      },
+    },
+  };
+
   return (
     <div className="app__menu" id="menu">
-      <div className="app__menu-title">
+      <div className="app__menu-title" >
         <h4>Menu That Fits Your Palette</h4>
         <img src={spoon} alt="spoon" />
-        <h1>Today's Special</h1>
+        <motion.h1 variants={variants} initial="hidden" animate="visible" ref={ref}>
+          Today's Special
+        </motion.h1>
       </div>
       <div className="app__menu-content">
         <div className="app__menu-content_wine">
@@ -43,7 +66,9 @@ function Menu() {
         </div>
       </div>
       <div className="app__menu-button">
-        <button type="button" className="btn">View More</button>
+        <button type="button" className="btn">
+          View More
+        </button>
       </div>
     </div>
   );

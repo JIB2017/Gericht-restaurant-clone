@@ -1,16 +1,35 @@
-import React from "react";
+import React, { useRef } from "react";
 import laurels from "../../assets/laurels.png";
 import spoon from "../../assets/spoon.png";
 import data from "../../constants/data";
+import { motion, useInView } from "framer-motion";
 import "./Laurels.scss";
 
 function Laurels() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {once: true});
+
+  // Animation for title
+  const variants = {
+    hidden: {
+      opacity: 0,
+      x: -50,
+    },
+    visible: {
+      opacity: isInView ? 1 : 0,
+      x: isInView ? 0 : -50,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
     <div className="app__laurels" id="awards">
-      <div className="app__laurels-content">
-        <h4>Awards & Recognition</h4>
-        <img src={spoon} alt="spoon" />
-        <h1>Our Laurels</h1>
+      <div className="app__laurels-content" ref={ref}>
+        <h4 variants={variants}>Awards & Recognition</h4>
+        <img variants={variants} src={spoon} alt="spoon" />
+        <motion.h1 variants={variants} initial="hidden" animate="visible" >Our Laurels</motion.h1>
         <div className="app__laurels-content_awards">
           {data.awards.map((awards) => (
             <div className="app__laurels-content_award">

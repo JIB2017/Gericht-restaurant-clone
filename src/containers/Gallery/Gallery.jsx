@@ -5,11 +5,30 @@ import image1 from "../../assets/gallery01.png";
 import image2 from "../../assets/gallery02.png";
 import image3 from "../../assets/gallery03.png";
 import image4 from "../../assets/gallery04.png";
+import { motion, useInView } from "framer-motion";
 import "./Gallery.scss";
 
 function Gallery() {
   const scrollRef = useRef(null);
+  const ref = useRef(null);
+  const isInView = useInView(ref, {once: true});
 
+  // Animation for title
+  const variants = {
+    hidden: {
+      opacity: 0,
+      x: -50,
+    },
+    visible: {
+      opacity: isInView ? 1 : 0,
+      x: isInView ? 0 : -50,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
+  // Arrows controls
   const scroll = (direction) => {
     const {current} = scrollRef;
     direction === 'left' ? current.scrollLeft -=300 : current.scrollLeft += 300;
@@ -21,7 +40,7 @@ function Gallery() {
       <div className="app__gallery-content">
         <h4>Instagram</h4>
         <img src={spoon} alt="spoon" />
-        <h1>Photo Gallery</h1>
+        <motion.h1 variants={variants} initial="hidden" animate="visible" ref={ref} >Photo Gallery</motion.h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
           mattis ipsum turpis elit elit scelerisque egestas mu.

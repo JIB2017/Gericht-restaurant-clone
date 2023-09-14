@@ -18,7 +18,7 @@ const Modal = ({ handleClose, title, text }) => {
     exit: {
       opacity: 0,
       scale: 0.75,
-      trainsition: {
+      transition: {
         ease: "easeIn",
         duration: 0.15,
       },

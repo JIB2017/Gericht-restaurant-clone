@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import chef from "../../assets/chef.png";
 import spoon from "../../assets/spoon.png";
 import quote from "../../assets/quote.png";
@@ -6,6 +7,22 @@ import sign from "../../assets/sign.png";
 import "./Chef.scss";
 
 function Chef() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const variants = {
+    hidden: {
+      opacity: 0,
+      x: 50,
+    },
+    visible: {
+      opacity: isInView ? 1 : 0,
+      x: isInView ? 0 : 50,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
   return (
     <div className="app__chef">
       <div className="app__chef-image">
@@ -14,7 +31,7 @@ function Chef() {
       <div className="app__chef-content">
         <h4>Chef's Word</h4>
         <img src={spoon} alt="spoon" />
-        <h1>What We Believe In</h1>
+        <motion.h1 variants={variants} initial="hidden" animate="visible" ref={ref}>What We Believe In</motion.h1>
         <div className="app__chef-content_quote">
           <img src={quote} alt="quote" />
           <p>
