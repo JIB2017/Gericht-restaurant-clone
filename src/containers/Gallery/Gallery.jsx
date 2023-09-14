@@ -1,17 +1,31 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import spoon from "../../assets/spoon.png";
 import { BsArrowLeftShort, BsArrowRightShort, BsInstagram } from "react-icons/bs";
 import image1 from "../../assets/gallery01.png";
 import image2 from "../../assets/gallery02.png";
 import image3 from "../../assets/gallery03.png";
 import image4 from "../../assets/gallery04.png";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, AnimatePresence } from "framer-motion";
+import ModalImage from "../../components/Modal/ModalImage";
 import "./Gallery.scss";
 
 function Gallery() {
   const scrollRef = useRef(null);
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});
+  const images = [image1, image2, image3, image4];
+  const [imageModal, setImageModal] = useState(false);
+  const [imageIndex, setImageIndex] = useState(null);
+
+  const close = () => {
+    setImageModal(false);
+  }
+
+  const handleModal = (index) => {
+    setImageModal(true);
+    setImageIndex(index);
+    console.log(index);
+  }
 
   // Animation for title
   const variants = {
@@ -49,10 +63,11 @@ function Gallery() {
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
-          {[image1, image2, image3, image4].map((image, index) => (
+          {images.map((image, index) => (
             <div className="app__gallery-images_card" key={index}>
               <img src={image} alt="gallery_image" />
-              <BsInstagram size={40} className="app__gallery-images_icon"/>
+              <BsInstagram size={40} className="app__gallery-images_icon" onClick={() => handleModal(index)}/>
+              
             </div>
           ))}
         </div>
@@ -61,6 +76,9 @@ function Gallery() {
           <BsArrowRightShort className="app__gallery-arrows_icons" onClick={() => scroll('right')}/>
         </div>
       </div>
+      <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
+        { imageModal && <ModalImage modalOpen={imageModal} handleClose={close} img={images[imageIndex]} />}
+      </AnimatePresence>
     </div>
   );
 }
