@@ -123,4 +123,38 @@
       }
     }
   }
+
+  @media screen and (max-width: 1150px) {
+    flex-direction: column;
+    padding: 4rem 0 4rem 3rem;
+
+    .app__gallery-content {
+      margin-bottom: 3rem;
+
+      h1 {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .app__gallery-images {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    padding: 4rem 0 4rem 1.5rem;
+    .app__gallery-content {
+      h4 {
+        font-size: 20px;
+      }
+
+      h1 {
+        font-size: 55px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
 }
