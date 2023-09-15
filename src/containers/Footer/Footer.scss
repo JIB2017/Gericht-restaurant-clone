@@ -153,8 +153,60 @@
       font-family: var(--font-alt);
       color: var(--color-crimson);
       letter-spacing: 2px;
-      text-align: left;
+      text-align: center;
       margin-bottom: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    .app__footer-content {
+      flex-direction: column;
+
+      div {
+        margin-bottom: 3rem;
+      }
+
+      .app__footer-content_logo {
+        margin-right: 0;
+        img:first-child {
+          width: 230px;
+        }
+      }
+
+      .app__footer-content_hours {
+        margin-top: 0;
+      }
+    }
+
+    .app__footer-rights {
+      margin-right: 4.5rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .app__footer-content {
+      .app__footer-content_contact {
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .app__footer-content_logo {
+        p {
+          font-size: 14px;
+          width: 100%;
+        }
+      }
+
+      .app__footer-content_hours {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .app__footer-rights {
+      margin-right: 0;
     }
   }
 }
