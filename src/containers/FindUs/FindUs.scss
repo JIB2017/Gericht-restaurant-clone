@@ -65,10 +65,40 @@
 
   .app__findus-image {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
-      width: 629px;
-      height: 736px;
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    .app__findus-content {
+      h1 {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .app__findus-image {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 8rem 3rem;
+
+    .app__findus-content {
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .btn-findus {
+      margin-bottom: 2rem;
     }
   }
 }

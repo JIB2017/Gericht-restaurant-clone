@@ -44,7 +44,7 @@ function FindUs() {
         <h5>Opening Hours</h5>
         <p>Mon - Fri: 10:00 am - 02:00 am</p>
         <p>Sat - Sun: 10:00 am - 03:00 am</p>
-        <button type='button' className='btn'>Visit Us</button>
+        <button type='button' className='btn btn-findus'>Visit Us</button>
       </div>
       <div className='app__findus-image'>
         <motion.img variants={variants} initial="hiddenImg" animate="visibleImg" src={findUs} alt="spoon" />
