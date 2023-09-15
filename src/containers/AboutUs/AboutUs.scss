@@ -120,6 +120,11 @@
   }
 
   @media screen and (max-width: 500px) {
+    .app__about-overlay {
+      img {
+        width: 300px;
+      }
+    }
     .app__about-us {
       h1 {
         font-size: 55px;
