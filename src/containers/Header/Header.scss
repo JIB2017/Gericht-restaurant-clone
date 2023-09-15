@@ -41,6 +41,20 @@
       justify-content: flex-start;
       line-height: 27px;
     }
+
+    @media screen and (max-width: 650px) {
+        h1 {
+          font-size: 70px;
+          line-height: 70px;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+      h1 {
+        font-size: 50px;
+        line-height: 60px;
+      }
+    }
   }
 
   .app__header-image {
@@ -55,4 +69,17 @@
       width: 90%;
     }
   }
+
+  @media screen and (max-width: 1150px) {
+    flex-direction: column;
+    padding: 0 6rem;
+
+    .app__header-image {
+      margin: 4rem 0 0 0;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    padding: 0 3rem;
+  } 
 }

@@ -53,10 +53,10 @@
     }
 
     div {
-      color: red;
       width: 1px;
-      height: 90%;
-      margin-right: 3.5rem;
+      height: 30px;
+      background: var(--color-white);
+      margin: 0 1rem;
     }
 
     @media screen and (max-width: 1050px) {
@@ -121,8 +121,6 @@
             color: var(--color-golden);
           }
         }
-
-        
       }
     }
 
