@@ -50,7 +50,7 @@ function Header() {
   return (
     <div className="app__header" id="home" >
       <motion.div variants={variants} initial="hidden" animate="visible" className="app__header-content" ref={ref}>
-        <motion.p variants={item}>Chase The New Flavour</motion.p>
+        <motion.h4 variants={item}>Chase The New Flavour</motion.h4>
         <motion.img variants={item} src={spoon} alt="Spoon" />
         <motion.h1 variants={item}>The Key To Fine Dining</motion.h1>
         <motion.p variants={item}>
