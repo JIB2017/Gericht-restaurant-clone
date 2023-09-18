@@ -1,6 +1,9 @@
 # Gericht Restaurant
 
-Un sitio web excelente con 9 secciones para mostrar lo mejor que tienes para ofrecer, completamente mobile responsive.
+![](https://github.com/JIB2017/Gericht-restaurant-clone/assets/31837873/9624d98e-a19f-48bd-9cb7-0d0bc4a96c6e)
+
+
+Un excelente sitio web con 9 secciones para mostrar lo mejor que tienes para ofrecer, completamente mobile responsive.
 
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" />
