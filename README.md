@@ -7,6 +7,8 @@ Un sitio web excelente con 9 secciones para mostrar lo mejor que tienes para ofr
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass" width="40px" height="40px" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="40px" height="40px" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="react" width="40px" height="40px" />
+  <img src="https://github.com/JIB2017/Gericht-restaurant-clone/assets/31837873/de96fad7-7233-426a-9f0d-114d916c15b1" alt="react" width="40px" height="40px" />
+
 </div>
 
 ## Como se hizo:
@@ -21,8 +23,13 @@ Un sitio web excelente con 9 secciones para mostrar lo mejor que tienes para ofr
 
 5. **Organización de Archivos y Carpetas:** Una organización y estructura de archivos y carpetas fácil de entender para una mejor flujo de trabajo.
 
-## Lo que aprendí:
+## Lo aprendido:
 
-**Figma a código:** Este es el seugndo de varios proyectos que tengo en mente en el que consisten en seleccionar un diseño hecho en Figma y pasarlo a código.
+**Figma a código:** Este es el segundo de varios proyectos que tengo en mente en el que consisten en seleccionar un diseño hecho en Figma y pasarlo a código.
+
+**Animaciones con Framer Motion:** Se añadieron animaciones con Framer Motion a medida que el usuario navega por el sitio.
+
+**Ventanas emergentes:** Se implementaron pop ups con el propósito de aumentar la conversión de los usuarios.
+
 
 [**Diseño Original**](https://www.figma.com/file/yvClSI9AZBRX8UaaGEByF3/Modern-UI%252FUX%253A-Gericht)
