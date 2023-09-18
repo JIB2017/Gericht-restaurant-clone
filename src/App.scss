@@ -27,6 +27,7 @@
   font-family: var(--font-base);
   color: var(--color-golden);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .opensans {
@@ -102,11 +103,12 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    padding: 3rem 1rem;
 
     img {
-      width: 301px;
-      height: 447px;
-      margin-bottom: 3rem;
+      width: clamp(170px, 301px, 80%);
+      height: clamp(301px ,447px, 80%);
+      margin-bottom: 1.5rem;
 
       &:hover {
         opacity: 1;
