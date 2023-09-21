@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import chef from "../../assets/chef.png";
+import chef from "../../assets/chef.webp";
 import spoon from "../../assets/spoon.png";
 import quote from "../../assets/quote.png";
 import sign from "../../assets/sign.png";

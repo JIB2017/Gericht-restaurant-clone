@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import spoon from "../../assets/spoon.png";
-import menu from "../../assets/menu.png";
+import menu from "../../assets/menu.webp";
 import MenuItem from "../../components/MenuItem/MenuItem";
 import data from "../../constants/data";
 import { motion, useInView } from "framer-motion";

@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
 import spoon from "../../assets/spoon.png";
 import { BsArrowLeftShort, BsArrowRightShort, BsInstagram } from "react-icons/bs";
-import image1 from "../../assets/gallery01.png";
-import image2 from "../../assets/gallery02.png";
-import image3 from "../../assets/gallery03.png";
-import image4 from "../../assets/gallery04.png";
+import image1 from "../../assets/gallery01.webp";
+import image2 from "../../assets/gallery02.webp";
+import image3 from "../../assets/gallery03.webp";
+import image4 from "../../assets/gallery04.webp";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import ModalImage from "../../components/Modal/ModalImage";
 import "./Gallery.scss";

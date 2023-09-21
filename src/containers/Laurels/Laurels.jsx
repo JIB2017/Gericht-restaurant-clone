@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import laurels from "../../assets/laurels.png";
+import laurels from "../../assets/laurels.webp";
 import spoon from "../../assets/spoon.png";
 import data from "../../constants/data";
 import { motion, useInView } from "framer-motion";

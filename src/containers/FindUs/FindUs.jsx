@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import spoon from "../../assets/spoon.png";
-import findUs from "../../assets/findus.png";
+import findUs from "../../assets/findus.webp";
 import { motion, useInView } from "framer-motion";
 import "./FindUs.scss";
 

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import spoon from "../../assets/spoon.png";
-import welcome from "../../assets/welcome.png";
+import welcome from "../../assets/welcome.webp";
 import { motion, useInView } from "framer-motion";
 import "./Header.scss";
 
