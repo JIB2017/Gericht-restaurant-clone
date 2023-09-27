@@ -32,7 +32,7 @@ Un excelente sitio web con 9 secciones para mostrar lo mejor que tienes para ofr
 
 **Animaciones con Framer Motion:** Se añadieron animaciones con Framer Motion a medida que el usuario navega por el sitio.
 
-**Ventanas emergentes:** Se implementaron pop ups con el propósito de aumentar la conversión de los usuarios.
+**Ventanas emergentes:** Se implementaron modals con el propósito de aumentar la conversión de los usuarios.
 
 
 [**Diseño Original**](https://www.figma.com/file/yvClSI9AZBRX8UaaGEByF3/Modern-UI%252FUX%253A-Gericht)
